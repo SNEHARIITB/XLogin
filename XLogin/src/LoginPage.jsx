@@ -29,7 +29,7 @@ const LoginPage = () => {
 
                 :
                 <>
-                {error && <h5>Invalid username and password</h5> }
+                {error && <h5>Invalid username or password</h5> }
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="Username">Username:</label>
                     <input id="Username" type="text" value={username} required onChange={(e) => setUsername(e.target.value)}/>
